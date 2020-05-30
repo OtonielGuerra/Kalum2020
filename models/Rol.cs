@@ -6,6 +6,6 @@ namespace Kalum2020_v1.models
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public List<UsuarioRol> UsuarioRoles { get; set; }
+        public List<UsuarioRol> UsuariosRoles { get; set; }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Input;
+using Kalum2020_v1.models;
 using Kalum2020_v1.Views;
 
 namespace Kalum2020_v1.ModelViews
@@ -16,6 +17,30 @@ namespace Kalum2020_v1.ModelViews
             { 
                 _Instancia = value;
                 NotificarCambio("Instancia");
+            }
+        }
+
+        private Usuario _Usuario;
+        public Usuario Usuario
+        {
+            get { return _Usuario; }
+            set 
+            { 
+                _Usuario = value;
+                NotificarCambio("Usuario");
+            }
+        }
+        
+
+        private bool _IsMenuCatalogo = false;
+
+        public bool IsMenuCatalogo
+        {
+            get { return _IsMenuCatalogo; }
+            set 
+            { 
+                _IsMenuCatalogo = value; 
+                NotificarCambio("IsMenuCatalogo");
             }
         }
         
@@ -48,6 +73,14 @@ namespace Kalum2020_v1.ModelViews
             else if (parameter.Equals("Salon"))
             {
                 new SalonView().ShowDialog();
+            }
+            else if (parameter.Equals("Login"))
+            {
+                new LoginView(this.Usuario, this).ShowDialog();
+                if (this.Usuario != null)
+                {
+                    this.IsMenuCatalogo = true;
+                }
             }
         }
 

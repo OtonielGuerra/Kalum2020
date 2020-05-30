@@ -31,9 +31,9 @@ namespace Kalum2020_v1.DataContext
         //Si tiene mas de una llave primaria
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<UsuarioRol>().HasKey(x => new {x.UsuarioId, x.RolId});
+            modelBuilder.Entity<UsuarioRol>()
+                .HasKey(x => new { x.UsuarioId, x.RoleId });
         }
-
         public KalumDB()
         {
 

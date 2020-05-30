@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Kalum2020_v1"
         xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         mc:Ignorable="d"
-        Title="Menú Principal" Height="450" Width="800">
+        Title="Menú Principal" Height="450" Width="800"
+        WindowState="Maximized">
     <Grid>
 
         <Grid.RowDefinitions>
@@ -17,13 +18,20 @@
 
         <Menu Grid.Row="0" Margin="5" HorizontalAlignment="left" VerticalAlignment="Stretch">
             <MenuItem Header="Menu">
-                <MenuItem Header="Catalogo">
+                
+                <MenuItem Header="Catalogo" IsEnabled="{Binding IsMenuCatalogo}">
                     <MenuItem Command="{Binding Instancia}" CommandParameter="Alumno" Header="Alumno"/>
                     <MenuItem Command="{Binding Instancia}" CommandParameter="CarreraTecnica" Header="Carrera Técnica"/>
                     <MenuItem Command="{Binding Instancia}" CommandParameter="Horario" Header="Horario"/>
                     <MenuItem Command="{Binding Instancia}" CommandParameter="Instructor" Header="Instructor"/>
                     <MenuItem Command="{Binding Instancia}" CommandParameter="Salon" Header="Salón"/>
+                    <MenuItem Command="{Binding Instancia}" CommandParameter="Login" Header="Salón"/>
                 </MenuItem>
+                
+                <MenuItem Header="Login">
+                    <MenuItem Command="{Binding Instancia}" CommandParameter="Login" Header="Iniciar Sesión"/>
+                </MenuItem>
+
             </MenuItem>
 
             <MenuItem Header="Ayuda">

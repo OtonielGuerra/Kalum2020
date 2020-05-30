@@ -66,3 +66,5 @@ C:\Users\Otto Guerra\Documents\Kalum2020_v1\bin\Debug\netcoreapp3.1\MahApps.Metr
 C:\Users\Otto Guerra\Documents\Kalum2020_v1\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
 C:\Users\Otto Guerra\Documents\Kalum2020_v1\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\Otto Guerra\Documents\Kalum2020_v1\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\Otto Guerra\Documents\Kalum2020_v1\obj\Debug\netcoreapp3.1\Views\LoginView.g.cs
+C:\Users\Otto Guerra\Documents\Kalum2020_v1\obj\Debug\netcoreapp3.1\Views\LoginView.baml
